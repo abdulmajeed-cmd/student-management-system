@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>STUDENTHUB | Student Management</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="app-container">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <div class="logo">
+          <span class="logo-icon">✦</span>
+          <h2>STUDENT<span>HUB</span></h2>
+        </div>
+
+        <p class="menu-label">MENU</p>
+
+        <nav>
+          <a href="#" class="active">◈ Dashboard</a>
+          <a href="#registration">＋ Register Student</a>
+          <a href="#students">▤ Students</a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <p>PHP & MySQL Project</p>
+          <small>Praktikum 7 · 2026</small>
+        </div>
+      </aside>
+
+      <!-- MAIN CONTENT -->
+
+      <main class="main-content">
+        <header class="topbar">
+          <div>
+            <p class="welcome">WELCOME BACK</p>
+            <h1>Student Dashboard</h1>
+            <p class="subtitle">Manage your student records in one place.</p>
+          </div>
+
+          <div class="profile">
+            <div class="profile-avatar">A</div>
+            <div>
+              <strong>Administrator</strong>
+              <small>System Admin</small>
+            </div>
+          </div>
+        </header>
+
+        <!-- STATISTICS -->
+
+        <section class="stats-grid">
+          <div class="glass-card stat-card">
+            <span class="stat-icon">♙</span>
+            <p>Total Students</p>
+            <h2 id="totalStudents">0</h2>
+            <small>Registered students</small>
+          </div>
+
+          <div class="glass-card stat-card">
+            <span class="stat-icon">✦</span>
+            <p>System Status</p>
+            <h2 class="online">Online</h2>
+            <small>Management system active</small>
+          </div>
+        </section>
+
+        <!-- REGISTRATION FORM -->
+
+        <section class="glass-card registration-card" id="registration">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">NEW RECORD</p>
+              <h2>Register a Student</h2>
+              <p>Add a new student to your database.</p>
+            </div>
+
+            <span class="heading-icon">＋</span>
+          </div>
+
+          <form id="studentForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="nama">Student Full Name</label>
+                <input
+                  type="text"
+                  id="nama"
+                  name="nama"
+                  placeholder="Enter student name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="nim">Student ID (NIM)</label>
+                <input
+                  type="text"
+                  id="nim"
+                  name="nim"
+                  placeholder="Enter student NIM"
+                  required
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="save-button">＋ Save Student</button>
+          </form>
+
+          <p id="message"></p>
+        </section>
+
+        <!-- STUDENT TABLE -->
+
+        <section class="glass-card students-card" id="students">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">DATABASE RECORDS</p>
+              <h2>Student Directory</h2>
+              <p>View and manage registered students.</p>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>STUDENT NAME</th>
+                  <th>NIM</th>
+                  <th>REGISTRATION DATE</th>
+                  <th>ACTIONS</th>
+                </tr>
+              </thead>
+
+              <tbody id="studentTable">
+                <tr>
+                  <td colspan="5">No student records available yet.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <footer>STUDENTHUB © 2026 | Powered by PHP & MySQL</footer>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
