@@ -73,6 +73,58 @@ Information Technology Program
 Faculty of Science and Technology  
 Universitas 'Aisyiyah Yogyakarta
 
+## Application Screenshots
+
+The following screenshots demonstrate the implementation and functionality of the STUDENTHUB Student Management System.
+
+### 1. PHP Environment
+
+PHP was successfully executed using the Laragon local development environment.
+
+![PHP Working](screenshots/01-php-working.jpeg)
+
+### 2. Database Configuration
+
+The MySQL database was created using phpMyAdmin.
+
+![Database Created](screenshots/02-database-created.jpeg)
+
+### 3. Database Connection
+
+The PHP backend successfully established a connection with the MySQL database.
+
+![Database Connection](screenshots/03-database-connection.jpeg)
+
+### 4. Student Management Dashboard
+
+The application features a modern glassmorphism interface with dashboard statistics and student registration functionality.
+
+![STUDENTHUB Dashboard](screenshots/04-dashboard.jpeg)
+
+### 5. Student Registration
+
+Student information can be submitted through the registration form.
+
+![Student Registration](screenshots/05-student-registration.jpeg)
+
+### 6. Student Records
+
+Registered student information is retrieved from MySQL and displayed dynamically in the student directory.
+
+![Student Records](screenshots/06-student-records.jpeg)
+
+### 7. Update Student Information
+
+The application allows existing student records to be modified.
+
+![Update Student](screenshots/07-update-student.jpeg)
+
+### 8. Delete Student Information
+
+The application supports deleting student records from the database.
+
+![Delete Student](screenshots/08-delete-student.jpeg)
+
 ## Developer
 
 Abdul Majeed
